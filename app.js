@@ -15,10 +15,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 var con = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "new_ereader_schema"
+  host: "bra4img6enp1je46efks-mysql.services.clever-cloud.com",
+  user: "usdikei9u9s8tx4x",
+  password: "kzKEjF1eV0KYYCDl5v5s",
+  database: "bra4img6enp1je46efks",
 });
 
 con.connect(function (err) {
@@ -559,4 +559,3 @@ app.post("/delete_chapter_question", async (req, res) => {
 app.listen(8000, () => {
   console.log(`Server is running on port 8000.`);
 });
-
